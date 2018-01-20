@@ -1,0 +1,412 @@
+
+
+/* Website design and colour inspired by https://rm-rf.com/ */
+
+
+body{
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+/*-----------------------Flexbox-----------------------*/
+.container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0px ;
+  line-height: 100%;
+  
+}
+
+.header{
+  padding: 0.5em;
+}
+
+.main_content{
+  flex: 1;
+  padding: 1em;
+  
+}
+
+.footer{
+  text-align: left;
+  padding: 1em;
+  /*background: #f0ecec;*/
+  background: #f5f5f5;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  
+
+}
+/*@media (max-width: 30em) {
+  .main_content{
+    flex: 1 0 auto;
+  }
+
+}
+@media (min-width: 30em) {
+  .header{
+    display: block;
+  }
+  .main_content{
+    flex-direction: row;
+    flex: 1 1 auto;
+  }
+}*/
+
+/*-----------------------Main Navigation-----------------------*/
+
+.header{
+  display: flex;
+  
+}
+
+.page_heading{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 28px;
+  padding: 0.5em 0.5em 0.5em 2em;
+}
+
+#menu{
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  list-style: none;
+  line-height: 20px;
+}
+
+li{
+  padding: 0 1em;
+}
+
+.main_header{
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+@media(max-width:35em){
+  .header{
+    flex-direction: column;
+  }
+  .page_heading{
+    margin: auto;
+  }
+}
+
+/*-----------------------Footer-----------------------*/
+footer{
+  display: flex;
+}
+.footer_social{
+  color: white;
+}
+.fa {
+  padding: 2px;
+  font-size: 3px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github{
+  background:#00b489;
+  color: white;
+
+}
+.fa-twitter{
+  background: rgb(65, 153, 225);
+  color: white
+}
+
+.contact{
+  list-style: none;
+  padding: 0;
+  column-count: 2;
+
+}
+
+.footer_social{
+  color: #00b489;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+}
+.menu_foot{
+  list-style: none;
+  
+
+}
+.menu_foot a{
+  text-decoration: none;
+  color: #039cfd;
+}
+.menu_foot li{
+  line-height: 18px;
+}
+
+header a{
+  text-decoration: none;
+  color: #039cfd;  
+}
+
+
+/*-----------------------Page 1 Main content-----------------------*/
+
+
+.page_1 h1{
+  color: #52bb56;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.about_us{
+  font-style: normal;
+  color: #777777;
+  line-height: 27px;
+  font-size: 18px;
+}
+
+.container_2{
+  padding: 1em;
+}
+
+.img1{
+  width: 275px;
+  height: 270px;
+  padding: 1em;
+
+}
+.img2{
+  width: 275px;
+  height: 270px;
+  padding: 1em;
+
+
+}
+.img3{
+  width: 275px;
+  height: 320px;
+  float: left;
+  padding: 2em 2em 2em 1em;
+
+}
+figure{
+  display: inline-block;
+  /*float:left;*/
+}
+figcaption{
+  color: #039cfd;
+  text-align: center;
+}
+
+.video{
+  padding: 1em;
+  margin: 0 auto;
+  text-align: center;
+  
+  
+}
+video{
+  border: 10px outset;
+  max-width: 100%;
+}
+
+@media(min-width: 35em){
+    figure{
+      float: left;
+    }
+  
+}
+
+@media(max-width:50em){
+  video{
+    height: 300px;
+  }
+  .img1, .img2, .img3{
+    max-width: 100%;
+  }
+}
+
+
+/*-----------------------Page 2 Main-----------------------*/
+
+.h1_page_2{
+  color: #52bb56;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.glossary h2{
+  color: #039cfd;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.glossary p{
+  color: #777777;
+  line-height: 27px;
+}
+@media(min-width:50em){
+.glossary{
+  list-style: none;
+  padding: 1em;
+  column-count: 2;
+}
+}
+
+@media(max-width:50em){
+  .glossary{
+    list-style: none;
+    padding: 1em;
+    column-count: 1;
+  }
+}
+
+
+/*-----------------------Page 3 main-----------------------*/
+
+.page_3 h1{
+  color: #52bb56;
+}
+.page_3 article{
+  color: #777777;
+  font-size: 18px;
+  line-height: 27px;
+
+}
+.job{
+  
+  list-style: none;
+  
+}
+
+.job a{
+  text-decoration: none;
+  color: #039cfd;
+}
+
+/*-----------------------Page 4-----------------------*/
+
+.page_4 h1{
+  color: #52bb56;
+}
+
+.page_4 article{
+  color: #777777;
+  font-size: 18px;
+  line-height: 27px;
+
+}
+
+.ai{
+  /*width: 575px;*/
+  padding: 1em;
+  height: 300px;
+  max-width: 100%;
+  display: flex;
+  
+}
+.ai_article{
+  display: flex;
+  
+}
+.ai_video{
+  flex: 1;
+  text-align: center;
+  padding: 2em;
+}
+
+iframe{
+  border: 10px outset;
+  max-width: 100%;
+}
+
+@media(max-width: 50em){
+  .ai_article{
+    flex-direction: column;
+  }
+  iframe{
+    height: 300px;
+  }
+}
+
+@media(min-width:60em){
+  .ai{
+    width: 575px;
+  }
+}
+
+/*-----------------------Page 5-----------------------*/
+.page_5 h1{
+  color: #52bb56;
+}
+.page_5 article{
+  color: #777777;
+  font-size: 18px;
+  line-height: 27px;
+
+}
+
+.page_5 a{
+  text-decoration: none;
+  color: #039cfd;
+
+}
+
+.page_5 li{
+  list-style: none;
+}
+
+/*-----------------------page 6-----------------------*/
+
+.page_6 h1{
+  color: #52bb56;
+}
+.page_6 article{
+  color: #777777;
+  font-size: 18px;
+  line-height: 27px;
+
+}
+
+.wire_img{
+  max-width: 100%;
+}
+
+.css_img{
+  /*height: 720px;
+  width: 1080px;*/
+  max-width: 100%;
+  box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2);
+  padding: 1em;
+  margin: 2em;
+
+}
+.val1, .val2, .val3, .val4, .val5, .val6{
+  /*height: 720px;
+  width: 1080px;*/
+  max-width: 100%;
+  box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2);
+  padding: 1em;
+  margin: 2em;
+  
+}
+
+.validation{
+  display: flex;
+  flex-direction: column;
+}
+
+a:hover{
+  color: #00b489;
+}
+
+/* Website design and colour inspired by https://rm-rf.com/ */
